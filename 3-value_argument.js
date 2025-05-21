@@ -1,6 +1,7 @@
 const {argv} = require('node:process');
 // argv[2] is the first argument passed to the script
-console.log(argv[2]);
-if (argv[2] === undefined) {
+const args = argv[2];
+if (args === undefined) {
+    // If no argument is passed, print "No argument"
     console.log("No argument");
 }
